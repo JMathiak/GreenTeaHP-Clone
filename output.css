@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -43,7 +43,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Trebuchet MS", sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -511,4 +511,66 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+}
+
+.mr-60 {
+  margin-right: 15rem;
+}
+
+.ml-28 {
+  margin-left: 7rem;
+}
+
+.box-border {
+  box-sizing: border-box;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.bg-darkGreen {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 113 61 / var(--tw-bg-opacity));
+}
+
+.bg-lightGreen {
+  --tw-bg-opacity: 1;
+  background-color: rgb(69 170 66 / var(--tw-bg-opacity));
+}
+
+.pl-96 {
+  padding-left: 24rem;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pr-60 {
+  padding-right: 15rem;
+}
+
+.pl-28 {
+  padding-left: 7rem;
 }
