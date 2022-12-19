@@ -513,6 +513,16 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 .mr-5 {
   margin-right: 1.25rem;
 }
@@ -529,12 +539,12 @@ video {
   margin-left: 0.25rem;
 }
 
-.box-border {
-  box-sizing: border-box;
+.mr-8 {
+  margin-right: 2rem;
 }
 
-.block {
-  display: block;
+.box-border {
+  box-sizing: border-box;
 }
 
 .inline-block {
@@ -612,6 +622,14 @@ video {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .text-sm {
