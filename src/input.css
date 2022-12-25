@@ -5,8 +5,8 @@
 
 @layer utilities{
 
-    .w-1120{
-        width: 1140px;
+    .w-1230{
+        width: 1230px;
     }
 
     .h-50px{
@@ -15,5 +15,12 @@
 
     .h-100px{
         height: 100px;
+    }
+
+    .h-380{
+        height: 380px;
+    }
+    .text-14{
+        font-size: 14px;
     }
 }
