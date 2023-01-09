@@ -13,6 +13,7 @@ module.exports = {
       white: "#fff",
       gray: "rgba(235, 235, 235)",
       highlight: "#3A8F37",
+      mainBG: "#f7f7f7",
     },
     extend: {},
   },

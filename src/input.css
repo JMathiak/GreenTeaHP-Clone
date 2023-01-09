@@ -32,4 +32,17 @@
     .text-14{
         font-size: 14px;
     }
+
+    .w-350{
+        width: 350px;
+    }
+
+    .h-310{
+        height: 310px;
+    }
+
+    .h-1167{
+
+        height: 1167px; 
+    }
 }
