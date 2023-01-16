@@ -15,6 +15,7 @@ module.exports = {
       highlight: "#3A8F37",
       mainBG: "#f7f7f7",
       borderGray: "#dddddd",
+      darkFontGreen: "#0b713d",
     },
     extend: {},
   },
