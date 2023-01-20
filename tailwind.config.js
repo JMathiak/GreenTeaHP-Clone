@@ -16,6 +16,8 @@ module.exports = {
       mainBG: "#f7f7f7",
       borderGray: "#dddddd",
       darkFontGreen: "#0b713d",
+      ctwGreen: "#147c4c",
+      ylfGreen: "#4fae4d",
     },
     extend: {},
   },

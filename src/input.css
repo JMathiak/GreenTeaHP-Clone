@@ -20,9 +20,21 @@
     .w-1115{
         width: 1115px;
     }
+    
+    .w-1110{
+        width: 1110px;
+    }
 
     .w-250{
         width: 250px;
+    }
+
+    .w-240{
+        width: 240px;
+    }
+
+    .w-160{
+        width: 160px;
     }
 
     .h-248{
@@ -40,6 +52,10 @@
     .h-380{
         height: 380px;
     }
+
+    .h-390{
+        height: 390px;
+    }
     .text-14{
         font-size: 14px;
     }
@@ -55,5 +71,10 @@
     .h-1167{
 
         height: 1167px; 
+    }
+
+    .py-9px{
+        padding-top: 9px;
+        padding-bottom: 9px;
     }
 }
