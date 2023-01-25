@@ -43,7 +43,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: "Trebuchet MS", sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -521,16 +521,20 @@ video {
   position: relative;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .left-0 {
   left: 0px;
 }
 
-.bottom-0 {
-  bottom: 0px;
+.right-0 {
+  right: 0px;
 }
 
-.top-0 {
-  top: 0px;
+.bottom-0 {
+  bottom: 0px;
 }
 
 .z-10 {
@@ -539,6 +543,10 @@ video {
 
 .z-0 {
   z-index: 0;
+}
+
+.m-0 {
+  margin: 0px;
 }
 
 .my-4 {
@@ -569,6 +577,14 @@ video {
 
 .mr-8 {
   margin-right: 2rem;
+}
+
+.ml-12 {
+  margin-left: 3rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .mb-36 {
@@ -647,12 +663,16 @@ video {
   margin-bottom: 2rem;
 }
 
-.ml-12 {
-  margin-left: 3rem;
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
 }
 
 .box-border {
@@ -777,18 +797,29 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 3 5 / var(--tw-bg-opacity));
-}
-
 .bg-topFootGreen {
   --tw-bg-opacity: 1;
   background-color: rgb(2 128 70 / var(--tw-bg-opacity));
 }
 
+.bg-banner {
+  background-image: url('/images/banner01.png');
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .p-4 {
   padding: 1rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .py-3 {
@@ -841,17 +872,21 @@ video {
 }
 
 .font-sans {
-  font-family: "Trebuchet MS", sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-3xl {
@@ -896,6 +931,11 @@ video {
 .text-darkFontGreen {
   --tw-text-opacity: 1;
   color: rgb(11 113 61 / var(--tw-text-opacity));
+}
+
+.text-grayText {
+  --tw-text-opacity: 1;
+  color: rgb(92 92 92 / var(--tw-text-opacity));
 }
 
 .w-1230{
