@@ -2,9 +2,6 @@
 module.exports = {
   content: ["./dist/*.{html,js}"],
   theme: {
-    fontFamily: {
-      sans: ['"Trebuchet MS"', "sans-serif"],
-    },
     colors: {
       darkGreen: "#00713d",
       lightGreen: "#45aa42",
@@ -18,8 +15,13 @@ module.exports = {
       darkFontGreen: "#0b713d",
       ctwGreen: "#147c4c",
       ylfGreen: "#4fae4d",
+      grayText: "#5c5c5c",
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        banner: "url('/images/banner01.png')",
+      },
+    },
   },
   plugins: [],
 };
