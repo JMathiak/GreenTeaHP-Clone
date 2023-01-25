@@ -675,6 +675,10 @@ video {
   margin-bottom: 4rem;
 }
 
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
