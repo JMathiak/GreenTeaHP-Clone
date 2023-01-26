@@ -16,6 +16,8 @@ module.exports = {
       ctwGreen: "#147c4c",
       ylfGreen: "#4fae4d",
       grayText: "#5c5c5c",
+      hoveredText: "#dadcd2",
+      buttonHover: "#368534",
     },
     extend: {
       backgroundImage: {
