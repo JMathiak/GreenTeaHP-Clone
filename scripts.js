@@ -5,6 +5,8 @@ function addHover() {
   let mlNavBar = document.querySelector("#ml");
   let sogtDropdown = document.querySelector("#sogt-dropdown");
   let sogtNavBar = document.querySelector("#sogt");
+  let myAccountNav = document.querySelector("#my-account");
+  let signInDropDown = document.querySelector("#sign-in-button");
   semNavBar.addEventListener("mouseover", function (e) {
     semDropdown.classList.remove("hidden");
   });
@@ -22,6 +24,12 @@ function addHover() {
   });
   sogtNavBar.addEventListener("mouseout", function (e) {
     sogtDropdown.classList.add("hidden");
+  });
+  myAccountNav.addEventListener("mouseover", function (e) {
+    signInDropDown.classList.remove("hidden");
+  });
+  myAccountNav.addEventListener("mouseout", function (e) {
+    signInDropDown.classList.add("hidden");
   });
 }
 
