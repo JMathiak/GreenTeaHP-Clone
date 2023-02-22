@@ -21,7 +21,9 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        banner: "url('/images/banner01.png')",
+        banner1: "url('/images/banner01.png')",
+        banner2: "url('/images/banner02.png')",
+        banner3: "url('/images/banner03.png')",
       },
     },
   },

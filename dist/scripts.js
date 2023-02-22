@@ -1,3 +1,5 @@
+let i = 1;
+let currSlide = "bg-banner1";
 function addHover() {
   let semDropdown = document.querySelector("#sem-dropdown");
   let semNavBar = document.querySelector("#sem");
@@ -33,4 +35,49 @@ function addHover() {
   });
 }
 
+function carouselButtons() {
+  let carouselForward = document.querySelector("#carousel-forward");
+  let carouselBackward = document.querySelector("#carousel-back");
+  let banner = document.querySelector("#banner");
+
+  carouselForward.onclick = function (event) {
+    event.preventDefault();
+    i = i + 1;
+    if (i == 2) {
+      banner.classList.remove(currSlide);
+      banner.classList.add("bg-banner2");
+      currSlide = "bg-banner2";
+    } else if (i == 3) {
+      banner.classList.remove(currSlide);
+      banner.classList.add("bg-banner3");
+      currSlide = "bg-banner3";
+    } else if (i > 3) {
+      banner.classList.remove(currSlide);
+      banner.classList.add("bg-banner1");
+      currSlide = "bg-banner3";
+      i = 1;
+    }
+  };
+
+  carouselBackward.onclick = function (event) {
+    event.preventDefault();
+    i = i - 1;
+    if (i == 2) {
+      banner.classList.remove(currSlide);
+      banner.classList.add("bg-banner2");
+      currSlide = "bg-banner2";
+    } else if (i == 1) {
+      banner.classList.remove(currSlide);
+      banner.classList.add("bg-banner1");
+      currSlide = "bg-banner1";
+    } else if (i == 0) {
+      banner.classList.remove(currSlide);
+      banner.classList.add("bg-banner3");
+      currSlide = "bg-banner3";
+      i = 3;
+    }
+  };
+}
+
 addHover();
+carouselButtons();
