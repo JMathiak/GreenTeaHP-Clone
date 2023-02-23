@@ -38,22 +38,31 @@ function addHover() {
 function carouselButtons() {
   let carouselForward = document.querySelector("#carousel-forward");
   let carouselBackward = document.querySelector("#carousel-back");
+  let carouselItem1 = document.querySelector("#carousel-1");
+  let carouselItem2 = document.querySelector("#carousel-2");
+  let carouselItem3 = document.querySelector("#carousel-3");
   let banner = document.querySelector("#banner");
 
   carouselForward.onclick = function (event) {
     event.preventDefault();
     i = i + 1;
     if (i == 2) {
-      banner.classList.remove(currSlide);
-      banner.classList.add("bg-banner2");
+      carouselItem1.classList.remove("block");
+      carouselItem2.classList.remove("hidden");
+      carouselItem1.classList.add("hidden");
+      carouselItem2.classList.add("block");
       currSlide = "bg-banner2";
     } else if (i == 3) {
-      banner.classList.remove(currSlide);
-      banner.classList.add("bg-banner3");
+      carouselItem2.classList.remove("block");
+      carouselItem3.classList.remove("hidden");
+      carouselItem2.classList.add("hidden");
+      carouselItem3.classList.add("block");
       currSlide = "bg-banner3";
     } else if (i > 3) {
-      banner.classList.remove(currSlide);
-      banner.classList.add("bg-banner1");
+      carouselItem3.classList.remove("block");
+      carouselItem1.classList.remove("hidden");
+      carouselItem3.classList.add("hidden");
+      carouselItem1.classList.add("block");
       currSlide = "bg-banner3";
       i = 1;
     }
@@ -63,16 +72,22 @@ function carouselButtons() {
     event.preventDefault();
     i = i - 1;
     if (i == 2) {
-      banner.classList.remove(currSlide);
-      banner.classList.add("bg-banner2");
+      carouselItem3.classList.remove("block");
+      carouselItem2.classList.remove("hidden");
+      carouselItem3.classList.add("hidden");
+      carouselItem2.classList.add("block");
       currSlide = "bg-banner2";
     } else if (i == 1) {
-      banner.classList.remove(currSlide);
-      banner.classList.add("bg-banner1");
+      carouselItem2.classList.remove("block");
+      carouselItem1.classList.remove("hidden");
+      carouselItem2.classList.add("hidden");
+      carouselItem1.classList.add("block");
       currSlide = "bg-banner1";
     } else if (i == 0) {
-      banner.classList.remove(currSlide);
-      banner.classList.add("bg-banner3");
+      carouselItem1.classList.remove("block");
+      carouselItem3.classList.remove("hidden");
+      carouselItem1.classList.add("hidden");
+      carouselItem3.classList.add("block");
       currSlide = "bg-banner3";
       i = 3;
     }
