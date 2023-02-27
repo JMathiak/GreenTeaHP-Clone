@@ -18,6 +18,7 @@ module.exports = {
       grayText: "#5c5c5c",
       hoveredText: "#dadcd2",
       buttonHover: "#368534",
+      lightGrayBox: "#f9f9f9",
     },
     extend: {
       backgroundImage: {
