@@ -41,6 +41,9 @@ function carouselButtons() {
   let carouselItem1 = document.querySelector("#carousel-1");
   let carouselItem2 = document.querySelector("#carousel-2");
   let carouselItem3 = document.querySelector("#carousel-3");
+  let button1 = document.querySelector("#carousel-button-1");
+  let button2 = document.querySelector("#carousel-button-2");
+  let button3 = document.querySelector("#carousel-button-3");
   let banner = document.querySelector("#banner");
 
   carouselForward.onclick = function (event) {
@@ -51,19 +54,29 @@ function carouselButtons() {
       carouselItem2.classList.remove("hidden");
       carouselItem1.classList.add("hidden");
       carouselItem2.classList.add("block");
-      currSlide = "bg-banner2";
+      button1.classList.remove("bg-grayText");
+      button1.classList.add("bg-lightGrayBox");
+      button2.classList.remove("bg-lightGrayBox");
+      button2.classList.add("bg-grayText");
     } else if (i == 3) {
       carouselItem2.classList.remove("block");
       carouselItem3.classList.remove("hidden");
       carouselItem2.classList.add("hidden");
       carouselItem3.classList.add("block");
-      currSlide = "bg-banner3";
+      button2.classList.remove("bg-grayText");
+      button2.classList.add("bg-lightGrayBox");
+      button3.classList.remove("bg-lightGrayBox");
+      button3.classList.add("bg-grayText");
     } else if (i > 3) {
       carouselItem3.classList.remove("block");
       carouselItem1.classList.remove("hidden");
       carouselItem3.classList.add("hidden");
       carouselItem1.classList.add("block");
-      currSlide = "bg-banner3";
+      button3.classList.remove("bg-grayText");
+      button3.classList.add("bg-lightGrayBox");
+      button1.classList.remove("bg-lightGrayBox");
+      button1.classList.add("bg-grayText");
+
       i = 1;
     }
   };
@@ -76,19 +89,28 @@ function carouselButtons() {
       carouselItem2.classList.remove("hidden");
       carouselItem3.classList.add("hidden");
       carouselItem2.classList.add("block");
-      currSlide = "bg-banner2";
+      button3.classList.remove("bg-grayText");
+      button3.classList.add("bg-lightGrayBox");
+      button2.classList.remove("bg-lightGrayBox");
+      button2.classList.add("bg-grayText");
     } else if (i == 1) {
       carouselItem2.classList.remove("block");
       carouselItem1.classList.remove("hidden");
       carouselItem2.classList.add("hidden");
       carouselItem1.classList.add("block");
-      currSlide = "bg-banner1";
+      button2.classList.remove("bg-grayText");
+      button2.classList.add("bg-lightGrayBox");
+      button1.classList.remove("bg-lightGrayBox");
+      button1.classList.add("bg-grayText");
     } else if (i == 0) {
       carouselItem1.classList.remove("block");
       carouselItem3.classList.remove("hidden");
       carouselItem1.classList.add("hidden");
       carouselItem3.classList.add("block");
-      currSlide = "bg-banner3";
+      button1.classList.remove("bg-grayText");
+      button1.classList.add("bg-lightGrayBox");
+      button3.classList.remove("bg-lightGrayBox");
+      button3.classList.add("bg-grayText");
       i = 3;
     }
   };
