@@ -162,5 +162,58 @@ function goToSlide(target, event) {
   }
 }
 
+function rotateSlide(target) {
+  let button1 = document.querySelector("#carousel-button-1");
+  let button2 = document.querySelector("#carousel-button-2");
+  let button3 = document.querySelector("#carousel-button-3");
+  let carouselItem1 = document.querySelector("#carousel-1");
+  let carouselItem2 = document.querySelector("#carousel-2");
+  let carouselItem3 = document.querySelector("#carousel-3");
+
+  if (i == 1) {
+    button1.classList.remove("bg-grayText");
+    button1.classList.add("bg-lightGrayBox");
+    carouselItem1.classList.remove("block");
+    carouselItem1.classList.add("hidden");
+  } else if (i == 2) {
+    button2.classList.remove("bg-grayText");
+    button2.classList.add("bg-lightGrayBox");
+    carouselItem2.classList.remove("block");
+    carouselItem2.classList.add("hidden");
+  } else if (i == 3 || i > 3) {
+    button3.classList.remove("bg-grayText");
+    button3.classList.add("bg-lightGrayBox");
+    carouselItem3.classList.remove("block");
+    carouselItem3.classList.add("hidden");
+  }
+
+  if (target == 1) {
+    button1.classList.remove("bg-lightGrayBox");
+    button1.classList.add("bg-grayText");
+    carouselItem1.classList.remove("hidden");
+    carouselItem1.classList.add("block");
+    i = 1;
+  } else if (target == 2) {
+    button2.classList.remove("bg-lightGrayBox");
+    button2.classList.add("bg-grayText");
+    carouselItem2.classList.remove("hidden");
+    carouselItem2.classList.add("block");
+    i = 2;
+  } else if (target == 3) {
+    button3.classList.remove("bg-lightGrayBox");
+    button3.classList.add("bg-grayText");
+    carouselItem3.classList.remove("hidden");
+    carouselItem3.classList.add("block");
+    i = 3;
+  } else if (target > 3) {
+    button1.classList.remove("bg-lightGrayBox");
+    button1.classList.add("bg-grayText");
+    carouselItem1.classList.remove("hidden");
+    carouselItem1.classList.add("block");
+    i = 1;
+  }
+}
+
+let intervalFunct = setInterval("rotateSlide(i + 1)", 3000);
 addHover();
 carouselButtons();
