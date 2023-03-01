@@ -899,14 +899,6 @@ video {
   background-image: url('/images/banner01.png');
 }
 
-.bg-banner2 {
-  background-image: url('/images/banner02.png');
-}
-
-.bg-banner3 {
-  background-image: url('/images/banner03.png');
-}
-
 .p-3 {
   padding: 0.75rem;
 }
