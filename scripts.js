@@ -15,6 +15,10 @@ function addHover() {
   semNavBar.addEventListener("mouseout", function (e) {
     semDropdown.classList.add("hidden");
   });
+  // semNavBar.addEventListener("click", function (e) {
+  //   e.preventDefault();
+  //   semDropdown.classList.remove("hidden");
+  // });
   mlNavBar.addEventListener("mouseover", function (e) {
     mlDropdown.classList.remove("hidden");
   });
