@@ -11,19 +11,63 @@ function addHover() {
   let signInDropDown = document.querySelector("#sign-in-button");
   semNavBar.addEventListener("mouseover", function (e) {
     semDropdown.classList.remove("hidden");
+    semDropdown.classList.add("hovered");
   });
   semNavBar.addEventListener("mouseout", function (e) {
     semDropdown.classList.add("hidden");
+    semDropdown.classList.remove("hovered");
   });
-  // semNavBar.addEventListener("click", function (e) {
-  //   e.preventDefault();
-  //   semDropdown.classList.remove("hidden");
-  // });
+  semNavBar.addEventListener("click", function (e) {
+    e.preventDefault();
+    if (mlDropdown.classList.contains("clicked")) {
+      mlDropdown.classList.add("hidden");
+      mlDropdown.classList.remove("clicked");
+    }
+    if (sogtDropdown.classList.contains("clicked")) {
+      sogtDropdown.classList.add("hidden");
+      sogtDropdown.classList.remove("clicked");
+    }
+    if (signInDropDown.classList.contains("clicked")) {
+      signInDropDown.classList.add("hidden");
+      signInDropDown.classList.remove("clicked");
+    }
+    if (semDropdown.classList.contains("clicked")) {
+      semDropdown.classList.add("hidden");
+      semDropdown.classList.remove("clicked");
+    } else {
+      semDropdown.classList.remove("hidden");
+      semDropdown.classList.add("clicked");
+      e.stopPropagation();
+    }
+  });
   mlNavBar.addEventListener("mouseover", function (e) {
     mlDropdown.classList.remove("hidden");
   });
   mlNavBar.addEventListener("mouseout", function (e) {
     mlDropdown.classList.add("hidden");
+  });
+  mlNavBar.addEventListener("click", function (e) {
+    e.preventDefault();
+    if (sogtDropdown.classList.contains("clicked")) {
+      sogtDropdown.classList.add("hidden");
+      sogtDropdown.classList.remove("clicked");
+    }
+    if (signInDropDown.classList.contains("clicked")) {
+      signInDropDown.classList.add("hidden");
+      signInDropDown.classList.remove("clicked");
+    }
+    if (semDropdown.classList.contains("clicked")) {
+      semDropdown.classList.add("hidden");
+      semDropdown.classList.remove("clicked");
+    }
+    if (mlDropdown.classList.contains("clicked")) {
+      mlDropdown.classList.add("hidden");
+      mlDropdown.classList.remove("clicked");
+    } else {
+      mlDropdown.classList.remove("hidden");
+      mlDropdown.classList.add("clicked");
+      e.stopPropagation();
+    }
   });
   sogtNavBar.addEventListener("mouseover", function (e) {
     sogtDropdown.classList.remove("hidden");
@@ -31,12 +75,77 @@ function addHover() {
   sogtNavBar.addEventListener("mouseout", function (e) {
     sogtDropdown.classList.add("hidden");
   });
+  sogtNavBar.addEventListener("click", function (e) {
+    e.preventDefault();
+    if (mlDropdown.classList.contains("clicked")) {
+      mlDropdown.classList.add("hidden");
+      mlDropdown.classList.remove("clicked");
+    }
+    if (signInDropDown.classList.contains("clicked")) {
+      signInDropDown.classList.add("hidden");
+      signInDropDown.classList.remove("clicked");
+    }
+    if (semDropdown.classList.contains("clicked")) {
+      semDropdown.classList.add("hidden");
+      semDropdown.classList.remove("clicked");
+    }
+    if (sogtDropdown.classList.contains("clicked")) {
+      sogtDropdown.classList.add("hidden");
+      sogtDropdown.classList.remove("clicked");
+    } else {
+      sogtDropdown.classList.remove("hidden");
+      sogtDropdown.classList.add("clicked");
+      e.stopPropagation();
+    }
+  });
   myAccountNav.addEventListener("mouseover", function (e) {
     signInDropDown.classList.remove("hidden");
   });
   myAccountNav.addEventListener("mouseout", function (e) {
     signInDropDown.classList.add("hidden");
   });
+  myAccountNav.addEventListener("click", function (e) {
+    e.preventDefault();
+    if (mlDropdown.classList.contains("clicked")) {
+      mlDropdown.classList.add("hidden");
+      mlDropdown.classList.remove("clicked");
+    }
+    if (sogtDropdown.classList.contains("clicked")) {
+      sogtDropdown.classList.add("hidden");
+      sogtDropdown.classList.remove("clicked");
+    }
+    if (semDropdown.classList.contains("clicked")) {
+      semDropdown.classList.add("hidden");
+      semDropdown.classList.remove("clicked");
+    }
+    if (signInDropDown.classList.contains("clicked")) {
+      signInDropDown.classList.add("hidden");
+      signInDropDown.classList.remove("clicked");
+    } else {
+      signInDropDown.classList.remove("hidden");
+      signInDropDown.classList.add("clicked");
+      e.stopPropagation();
+    }
+  });
+
+  window.onclick = function (event) {
+    if (!event.target.matches("#sem")) {
+      semDropdown.classList.add("hidden");
+      semDropdown.classList.remove("clicked");
+    }
+    if (!event.target.matches("#ml")) {
+      mlDropdown.classList.add("hidden");
+      mlDropdown.classList.remove("clicked");
+    }
+    if (!event.target.matches("#sogt")) {
+      sogtDropdown.classList.add("hidden");
+      sogtDropdown.classList.remove("clicked");
+    }
+    if (!event.target.matches("#my-account")) {
+      signInDropDown.classList.add("hidden");
+      signInDropDown.classList.remove("clicked");
+    }
+  };
 }
 
 function carouselButtons() {

@@ -93,4 +93,12 @@
     .w-140px{
         width: 140px;
     }
+
+    .clicked{
+        display:block;
+    }
+
+    .hovered{
+        display:block;
+    }
 }
