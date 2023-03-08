@@ -101,4 +101,16 @@
     .hovered{
         display:block;
     }
+
+    .w-195px{
+        width: 195px;
+    }
+
+    .h-27px{
+        height: 27px;
+    }
+
+    .font-15px{
+        font-size: 15px;
+    }
 }
